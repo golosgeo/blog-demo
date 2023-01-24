@@ -1,0 +1,12 @@
+/* Footer design */
+
+#footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #5d737e;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+}
+

@@ -1,0 +1,155 @@
+/* Main style */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e0e0e0;
+}
+
+/* Card for content */
+.card {
+    border-radius: 25px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Row for cards */
+.row {
+    min-width: 320px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#reg-log-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Registration form design */
+
+.reg-log-form {
+    width: 500px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin: 150px auto;
+}
+
+.reg-log-button {
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.reg-log-button:hover {
+    background-color: #555555;
+    color: white;
+}
+
+/* Registration/Login error message */
+.message {
+    border: 2px solid red;
+    border-radius: 3px;
+    padding: 10px;
+    max-width: 1000px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.page-container {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    flex: 1 1 auto;
+    padding-bottom: 40px; /* Footer height */
+}
+
+/* For images */
+.resize {
+    width: 400px;
+    height: auto;
+}
+
+.centred {
+    text-align: center;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Button design */
+
+.buttons {
+    padding: 36px;
+    margin: 10px;
+    list-style: none;
+}
+
+.pag-button {
+    border-radius: 25px;
+    background-color: white;
+    border: 1px solid gray;
+    color: black;
+    padding: 10px 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    width: 200px;
+}
+
+.buttons .pag-button {
+    float: left;
+}
+
+.pag-button a {
+    text-decoration: none;
+    display: block;
+}
+
+/* to avoid double border */
+.pag-button:not(:last-child) {
+    border-right: none;
+}
+
+.pag-button:hover {
+    background-color: #c0fdfb;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
