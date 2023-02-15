@@ -23,6 +23,7 @@ if (!isset($_SESSION)) {
             <a href="loggingIn.php" class="sign-button">Sign in</a>
             <a href="registration.php" class="sign-button">Sign up</a>
         <?php } else { ?>
+            <a href="editor.php" class="sign-button"> Upload article</a>
             <a href="logout.php" class="sign-button">Log out</a>
             <a href="profile.php" class="sign-button">Profile</a>
         <?php } ?>

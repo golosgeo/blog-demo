@@ -25,6 +25,14 @@ session_start();
                 <?php unset($_SESSION['register_message']);
             } ?>
 
+            <!-- Message about successful addition of article -->
+            <?php if (isset($_SESSION['article_message'])) { ?>
+                <p class="message card">
+                    <?= $_SESSION['article_message'] ?>
+                </p>
+                <?php unset($_SESSION['article_message']);
+            } ?>
+
             <!-- New articles -->
             <?php include 'lastthree.php' ?>
         </div>
